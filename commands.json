@@ -1,0 +1,67 @@
+{
+  "cp": [
+    {
+      "type": "app",
+      "path": "C:/Program Files/Sublime Text/sublime_text.exe"
+    },
+    {
+      "type": "website",
+      "url": "https://codeforces.com"
+    },
+    {
+      "type": "website",
+      "url": "https://chatgpt.com"
+    }
+  ],
+
+  "youtube": [
+    {
+      "type": "website",
+      "url": "https://youtube.com"
+    }
+  ],
+
+   "ai": [
+    {
+        "type": "website",
+        "url": "https://chatgpt.com"
+    }
+    ],
+
+    "music": [
+  {
+    "type": "app",
+    "path": "C:/Users/ngrdk/AppData/Local/Microsoft/WindowsApps/Spotify.exe"
+  }
+],
+
+"study": [
+  {
+    "type": "website",
+    "url": "https://chatgpt.com"
+  },
+  {
+    "type": "website",
+    "url": "https://youtube.com"
+  },
+  {
+    "type": "website",
+    "url": "https://nexttoppers.com"
+  }
+],
+
+"game": [
+  {
+    "type": "app",
+    "path": "C:/Users/ngrdk/AppData/Local/FastClient/FastClient.exe"
+  },
+  {
+    "type": "app",
+    "path": "C:/Users/ngrdk/AppData/Local/Microsoft/WindowsApps/Spotify.exe"
+  },
+  {
+    "type": "app",
+    "path": "C:/Users/ngrdk/AppData/Local/Discord/app-1.0.9242/Discord.exe"
+  }
+]
+}
