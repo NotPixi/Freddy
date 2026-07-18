@@ -1,25 +1,15 @@
-import json
-from voice import listen
-import os
-import webbrowser
 
-# Load commands
-with open("commands.json", "r") as f:
-    commands = json.load(f)
-
-while True:
+from assistant.loader import load_commands
+from assistant.tts import speak
+from assistant.speech import listen
+def main():
     command = listen()
 
-    if command == "exit":
-        break
-
-    if command in commands:
-        for action in commands[command]:
-
-            if action["type"] == "app":
-                os.startfile(action["path"])
-            elif action["type"] == "website":
-                webbrowser.open(action["url"])
-
+    if command is None :
+        speak("Sorry, I didn't catch that.")
     else:
-        print("Command not found.")
+        speak(command)
+
+
+if __name__ == "__main__":
+    main()
