@@ -5,7 +5,7 @@ from assistant.executor import execute
 def main():
     commands = load_commands()
 
-    
+        
     while True:
         command = listen()
         
@@ -14,7 +14,6 @@ def main():
         else:
             print(command)
             execute(command , commands)
-
 
 if __name__ == "__main__":
     main()
