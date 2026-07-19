@@ -1,14 +1,19 @@
-
 from assistant.loader import load_commands
 from assistant.tts import speak
 from assistant.speech import listen
+from assistant.executor import execute
 def main():
-    command = listen()
+    commands = load_commands()
 
-    if command is None :
-        speak("Sorry, I didn't catch that.")
-    else:
-        speak(command)
+    
+    while True:
+        command = listen()
+        
+        if command is None:
+            speak("Say it clear idiot!")
+        else:
+            print(command)
+            execute(command , commands)
 
 
 if __name__ == "__main__":

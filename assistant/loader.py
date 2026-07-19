@@ -1,4 +1,4 @@
-import json
+import json 
 
 COMMANDS_FILE = "config/commands.json"
 
@@ -10,7 +10,7 @@ def load_json(path):
             return json.load(file)
 
     except FileNotFoundError:
-        raise FileNotFoundError(f"Could not find '{path}'.")
+        raise FileNotFoundError(f"you dumb i Could not find '{path}'.")
     
 def load_commands():
     return load_json(COMMANDS_FILE)
