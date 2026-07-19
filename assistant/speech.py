@@ -7,7 +7,7 @@ def listen():
 
         try:
             audio = recognizer.listen(source)
-            text = recognizer.recognize_google(audio)
+            text = recognizer.recognize_google(audio).lower()
             return text
         except sr.UnknownValueError:
             return None
