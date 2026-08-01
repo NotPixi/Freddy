@@ -2,6 +2,7 @@ from assistant.loader import load_commands
 from assistant.tts import speak
 from assistant.speech import listen
 from assistant.executor import execute
+from assistant.parser import parse
 def main():
     commands = load_commands()
 
@@ -13,7 +14,8 @@ def main():
             speak("Say it clear idiot!")
         else:
             print(command)
-            execute(command , commands)
+            parsed = parse(command)
+            execute(parsed , commands)
 
 if __name__ == "__main__":
     main()

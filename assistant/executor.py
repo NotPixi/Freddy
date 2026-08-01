@@ -2,13 +2,12 @@ import os
 from assistant.tts import speak
 
 
-def execute(command, commands):
+def execute(parsed, commands):
 
-    for app in commands:
-
-        if app in command:
-            os.startfile(commands[app])
-            speak("Opening "+ app)
+        target = parsed["target"]
+        if target in commands:
+            os.startfile(commands[target])
+            speak("Opening "+ target)
             return
-
-    speak("Give me the path first idiot!")
+        else:
+            speak("Give me the path first idiot!")
